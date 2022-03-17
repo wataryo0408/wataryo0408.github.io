@@ -1,8 +1,6 @@
 /* common */
-
-.container{
-    /* outline: 1px solid red; */
-}
+/* 
+*/
 
 body{
     margin: 0;
@@ -33,42 +31,8 @@ header{
     box-shadow: 0 0 4px rgba(0, 0, 0, .3);
 }
 
-header .container{
-    display: flex;
-    height: 64px;
-}
-header .left{
-    
-    margin: 0 128px auto;
-}
-
-header .right{
-    height: 64px;
-    margin: 0 auto 128px;
-}
-
-header p{
-    font-size: 32px;
-    line-height: 64px;
-}
 
 
-
-header a{
-    color: #233326;
-    width: fit-content;
-    text-align: center;
-    padding: 0 15px;
-    line-height: 64px;
-    text-decoration: none;
-}
-
-
-/* main */
-
-main{
-    background-color: #fff;
-}
 
 main section{
     height: calc(100vh - 64px);
@@ -87,20 +51,128 @@ main .container{
     margin: auto;
 
 }
-main p{
-
-    font-size: 14px;
-}
 
 
 .hero{
-    padding-top: 64px;
+    /* padding-top: 64px; */
     background-image: url(../img/webbg_l_entrypackts.jpeg) ;
     background-position: bottom;
-    color: #fff;
+    /* color: #fff; */
+
 }
-/* footer */
-footer{
-    background-color: #999;
-    height: 64px;
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+
+    /* header */
+    header{
+        background-color: #eee;
+        height: 32px;
+    }
+    header .left{
+        width: 32px;
+        margin: 0 auto;
+    }
+    header img{
+        width: 32px;
+        height: 32px;
+        margin: 0 auto;
+    
+    }
+    header p ,.right{
+        display: none;
+    }
+
+
+    /* main */
+
+
+
+
+
+    main section{
+        height: calc(100vh - 32px);
+        position: relative;
+        margin: 0 auto;
+    
+    }
+
+    .hero{
+
+        background-position: top;
+    }
+    
+}
+
+@media (min-width: 800px){
+    header .container{
+        display: flex;
+        height: 64px;
+    }
+    header .left{
+        
+        margin: 0 128px auto;
+    }
+    
+    header .right{
+        height: 64px;
+        margin: 0 auto 128px;
+    }
+    
+    header p{
+        font-size: 32px;
+        line-height: 64px;
+    }
+    
+    
+    
+    header a{
+        color: #233326;
+        width: fit-content;
+        text-align: center;
+        padding: 0 15px;
+        line-height: 64px;
+        text-decoration: none;
+    }
+
+
+    /* main */
+    
+    main{
+        background-color: #fff;
+    }
+
+
+    main p{
+
+        font-size: 14px;
+    }
+
+    
+    /* footer */
+    footer{
+        background-color: #999;
+        height: 64px;
+    }
+   
+
 }
